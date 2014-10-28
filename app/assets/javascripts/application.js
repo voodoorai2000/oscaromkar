@@ -12,5 +12,5 @@
 //
 //= require jquery
 //= require turbolinks
-//= require colorbox-rails
+//= require jquery.colorbox
 //= require_tree .
