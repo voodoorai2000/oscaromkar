@@ -12,5 +12,5 @@
  *
  */
  //= require reset
- *= require colorbox-rails
+ //= require colorbox-rails
  //= require main
