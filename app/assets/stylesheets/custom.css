@@ -1,3 +1,7 @@
 .hidden {
   display: none;
 }
+
+.main_image {
+  max-height: '100px;'
+}

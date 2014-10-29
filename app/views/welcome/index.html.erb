@@ -22,21 +22,24 @@
 
   <section class="main clearfix">
 
-    <div class="work">
-      <a class='group1' href="assets/work3.jpg">
-        <img src="assets/work3.jpg" class="media" alt=""/>
-        <div class="caption">
-          <div class="work_title">
-            <h1>culpa qui officia deserunt mollit</h1>
+    <% @categories.each do |category| %>
+      <div class="work">
+        <a class='<%= category %>' href="<%= first_image(category) %>">
+          <img src="<%= first_image(category) %>" class="media" alt=""/>
+          <div class="caption">
+            <div class="work_title">
+              <h1><%= category %></h1>
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
+        </a>
+      </div>
 
-    <span class="hidden">
-      <a class='group1' href='assets/work4.jpg'>Photo_2</a>
-      <a class='group1' href='assets/work5.jpg'>Photo_3</a>
-    </span>
+      <% 6.times do |index|%>
+        <span class="hidden">
+          <a class='<%= category %>' href='<%= image_name(category, index + 2) %>'></a>
+        </span>
+      <% end %>
+    <% end %>
 
     <div class="work">
       <a href="inner.html">
@@ -93,14 +96,4 @@
       </a>
     </div>
 
-    <div class="work">
-      <a href="inner.html">
-        <img src="assets/work1.jpg" class="media" alt=""/>
-        <div class="caption">
-          <div class="work_title">
-            <h1>culpa qui officia deserunt mollit</h1>
-          </div>
-        </div>
-      </a>
-    </div>
   </section><!-- end main -->

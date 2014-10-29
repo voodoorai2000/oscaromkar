@@ -11,7 +11,9 @@
 <%= yield %>
 
 <script>
-  jQuery('.group1').colorbox({rel:'group1'});
+  <% @categories.each do |category| %>
+    jQuery('.<%= category %>').colorbox({rel:'<%= category %>', maxHeight: '100%'});
+  <% end %>
 </script>
 
 </body>
