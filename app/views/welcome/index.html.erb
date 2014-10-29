@@ -1,49 +1,28 @@
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="/assets/logo.png" title="Magnetic" alt="Magnetic"/></a>
-    </div><!-- end logo -->
+<section class="main clearfix">
 
-    <div id=""></div>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="selected">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav><!-- end navigation menu -->
-
-    <div class="footer clearfix">
-
-      <div class="rights">
-        <p>Copyright © 2014 Oscaromkar</p>
-      </div><!-- end rights -->
-    </div ><!-- end footer -->
-  </header><!-- end header -->
-
-  <section class="main clearfix">
-
-    <% @categories.each do |category| %>
-      <div class="work">
-        <a class='<%= category %>' href="<%= first_image(category) %>">
-          <img src="<%= first_image(category) %>" class="media" alt=""/>
-          <div class="caption">
-            <div class="work_title">
-              <h1><%= category %></h1>
-            </div>
+  <% @categories.each do |category| %>
+    <div class="work">
+      <a class='<%= category %>' href="<%= first_image(category) %>">
+        <img src="<%= first_image(category) %>" class="media" alt=""/>
+        <div class="caption">
+          <div class="work_title">
+            <h1><%= category %></h1>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
+    </div>
 
-      <% 6.times do |index|%>
-        <span class="hidden">
-          <a class='<%= category %>' href='<%= image_name(category, index + 2) %>'></a>
-        </span>
-      <% end %>
+    <% 6.times do |index|%>
+      <span class="hidden">
+        <a class='<%= category %>' href='<%= image_name(category, index + 2) %>'></a>
+      </span>
     <% end %>
+  <% end %>
 
+  <% 3.times do |index| %>
     <div class="work">
       <a href="inner.html">
-        <img src="assets/work4.jpg" class="media" alt=""/>
+        <img src="assets/work<%= index + 4 %>.jpg" class="media" alt=""/>
         <div class="caption">
           <div class="work_title">
             <h1>culpa qui officia deserunt mollit</h1>
@@ -51,49 +30,6 @@
         </div>
       </a>
     </div>
+  <% end %>
 
-    <div class="work">
-      <a href="inner.html">
-        <img src="assets/work5.jpg" class="media" alt=""/>
-        <div class="caption">
-          <div class="work_title">
-            <h1>culpa qui officia deserunt mollit</h1>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="work">
-      <a href="inner.html">
-        <img src="assets/work6.jpg" class="media" alt=""/>
-        <div class="caption">
-          <div class="work_title">
-            <h1>culpa qui officia deserunt mollit</h1>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="work">
-      <a href="inner.html">
-        <img src="assets/work2.jpg" class="media" alt=""/>
-        <div class="caption">
-          <div class="work_title">
-            <h1>culpa qui officia deserunt mollit</h1>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="work">
-      <a href="inner.html">
-        <img src="assets/work3.jpg" class="media" alt=""/>
-        <div class="caption">
-          <div class="work_title">
-            <h1>culpa qui officia deserunt mollit</h1>
-          </div>
-        </div>
-      </a>
-    </div>
-
-  </section><!-- end main -->
+</section><!-- end main -->

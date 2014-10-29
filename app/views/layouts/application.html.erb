@@ -8,7 +8,30 @@
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
+  
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="/assets/logo.png" title="Magnetic" alt="Magnetic"/></a>
+    </div><!-- end logo -->
+
+    <div id=""></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="selected">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+      <div class="rights">
+        <p>Copyright © 2014 Oscaromkar</p>
+      </div><!-- end rights -->
+    </div ><!-- end footer -->
+  </header><!-- end header -->
+
+   
 
 <script>
   <% @categories.each do |category| %>
