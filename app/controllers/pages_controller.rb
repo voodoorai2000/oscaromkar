@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :set_javascript_variables, except: [:about]
+  before_action :set_javascript_variables
 
   def artwork
     @categories = artwork_categories
