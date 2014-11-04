@@ -17,21 +17,22 @@
     </div><!-- end logo -->
 
     <div id=""></div>
+    
     <nav>
       <ul>
-        <li><a href="index.html" class="selected">Artwork</a></li>
-        <li><a href="index.html" class="">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><%= link_to 'Artwork',  root_path      %></li>
+        <li><%= link_to 'Projects', projects_path  %></li>
+        <li><%= link_to 'About',    about_path     %></li>
+        <li><%= link_to 'Contact', 'mailto:oscaromkar@gmail.com' %></li>
       </ul>
-    </nav><!-- end navigation menu -->
+    </nav>
 
     <div class="footer clearfix">
       <div class="rights">
         <p>Copyright © 2014 Oscaromkar</p>
-      </div><!-- end rights -->
-    </div ><!-- end footer -->
-  </header><!-- end header -->
+      </div>
+    </div >
+  </header>
 
    
 
