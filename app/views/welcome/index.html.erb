@@ -2,8 +2,8 @@
 
   <% @categories.each do |category| %>
     <div class="work">
-      <a class='<%= category %>' href="<%= first_image(category) %>">
-        <img src="<%= first_image(category) %>" class="media" alt=""/>
+      <a class='<%= category %>' href="<%= image_name(category, 1) %>">
+        <img src="<%= category_image(category) %>" class="media" alt=""/>
         <div class="caption">
           <div class="work_title">
             <h1><%= category %></h1>
@@ -19,17 +19,4 @@
     <% end %>
   <% end %>
 
-  <% 3.times do |index| %>
-    <div class="work">
-      <a href="inner.html">
-        <img src="assets/work<%= index + 4 %>.jpg" class="media" alt=""/>
-        <div class="caption">
-          <div class="work_title">
-            <h1>culpa qui officia deserunt mollit</h1>
-          </div>
-        </div>
-      </a>
-    </div>
-  <% end %>
-
-</section><!-- end main -->
+</section>

@@ -1,10 +1,10 @@
 module ApplicationHelper
 
-  def first_image(category)
-    image_name(category, 1)
+  def category_image(category)
+    "/assets/Artwork/CategoryImages/#{category.upcase}.jpg"
   end
 
   def image_name(category, index)
-    "/assets/Art/#{category}/#{index}.jpg"
+    "/assets/Artwork/#{category}/#{index}.jpg"
   end
 end
