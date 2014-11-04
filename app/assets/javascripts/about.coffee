@@ -1,29 +1,23 @@
-ready = ->
- $('.next').click ->
-   current_image = $(".top").css("background-image").match(/\d\.jpg/)[0].split(".")[0]
+ready = -> 
 
-   current_image = parseInt( current_image );
-   if current_image == 5
-     current_image = 1 
-   else
-    current_image = parseInt( current_image );
-    current_image = current_image + 1
+  $('.next').click ->
+    display_image(next_image())
 
-   $('.top').css("background-image", "url(/assets/About/#{current_image}.jpg)");
-   return false
+  $('.previous').click ->
+    display_image(previous_image())
 
- $('.previous').click ->
-   current_image = $(".top").css("background-image").match(/\d\.jpg/)[0].split(".")[0]
+  display_image = (image) ->
+    $('.top').css("background-image", "url(/assets/About/#{image}.jpg)");
+    return false
 
-   current_image = parseInt( current_image );
-   if current_image == 1
-     current_image = 5 
-   else
-    current_image = parseInt( current_image );
-    current_image = current_image - 1
+  current_image = ->
+    parseInt($(".top").css("background-image").match(/\d\.jpg/)[0].split(".")[0])
 
-   $('.top').css("background-image", "url(/assets/About/#{current_image}.jpg)");
-   return false
+  next_image = ->
+    if current_image() == 5 then 1 else current_image() + 1
+     
+  previous_image = ->
+    if current_image() == 1 then 5 else current_image() - 1
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
