@@ -10,7 +10,6 @@ class PagesController < ApplicationController
   end
 
   def about
-    @categories = []
   end
 
   private

@@ -182,13 +182,13 @@ h5, h6          { font-weight: bolder }
         display: block;
         width: 30px;
         height: 30px;
-        background: url('assets/sm.png') no-repeat;
+        background: url('/assets/sm.png') no-repeat;
         background-position: 0 0;
     }
 
 
     header ul.social li a:hover{
-        background: url('assets/sm_hover.png') no-repeat;
+        background: url('/assets/sm_hover.png') no-repeat;
     }
 
 
@@ -251,7 +251,7 @@ h5, h6          { font-weight: bolder }
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: url('assets/men_icons.png') no-repeat;
+    background: url('/assets/men_icons.png') no-repeat;
 }
 
 #menu_icon{    
@@ -354,7 +354,7 @@ h5, h6          { font-weight: bolder }
     overflow: hidden;
     display: block;
     position: relative;
-    background: url('assets/hero_image.jpg') no-repeat;
+    background: url('/assets/About/1.jpg') no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -386,7 +386,7 @@ h5, h6          { font-weight: bolder }
     display: block;
     width: 40px;
     height: 40px;
-    background: url('assets/p_navigation.png') no-repeat;
+    background: url('/assets/p_navigation.png') no-repeat;
     background-position: 0 0;
 }
 

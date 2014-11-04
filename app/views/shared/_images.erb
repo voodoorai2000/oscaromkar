@@ -1,24 +1,20 @@
-<section class="main clearfix">
-
-  <% @categories.each do |category| %>
-    <div class="work">
-      <a class='<%= category %>' href="<%= image_name(category, 1) %>">
-        <img src="<%= category_image(category) %>" class="media" alt=""/>
-        <div class="caption">
-          <div class="work_title">
-            <h1><%= name(category) %></h1>
-          </div>
+<% @categories.each do |category| %>
+  <div class="work">
+    <a class='<%= category %>' href="<%= image_name(category, 1) %>">
+      <img src="<%= category_image(category) %>" class="media" alt=""/>
+      <div class="caption">
+        <div class="work_title">
+          <h1><%= name(category) %></h1>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
+  </div>
 
-    <% image_count(category).times do |index|%>
-      <% unless missing_text_image?(index) %>
-        <span class="hidden">
-          <a class='<%= category %>' href='<%= image_name(category, index + 2) %>'></a>
-        </span>
-      <% end %>
+  <% image_count(category).times do |index|%>
+    <% unless missing_text_image?(index) %>
+      <span class="hidden">
+        <a class='<%= category %>' href='<%= image_name(category, index + 2) %>'></a>
+      </span>
     <% end %>
   <% end %>
-
-</section>
+<% end %>
