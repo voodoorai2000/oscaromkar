@@ -12,7 +12,7 @@
       </a>
     </div>
 
-    <% 6.times do |index|%>
+    <% image_count(category).times do |index|%>
       <span class="hidden">
         <a class='<%= category %>' href='<%= image_name(category, index + 2) %>'></a>
       </span>
