@@ -1,3 +1,11 @@
 .hidden {
   display: none;
 }
+
+div.title-spacing {
+  margin-top: 50px;
+}
+
+p.email {
+  color: #4b4848;
+}
