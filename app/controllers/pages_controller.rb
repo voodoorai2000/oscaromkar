@@ -15,11 +15,11 @@ class PagesController < ApplicationController
   private
 
   def artwork_categories
-    ["BlackAndWhite", "Creativity", "Digital", "Frotage", "Ink", "Inspirations", "Paint", "Pencil", "WaterColor"]
+    ["BlackAndWhite", "Pencil", "Digital", "WaterColor", "Ink", "Creativity", "Frotage", "Paint", "Inspirations"]
   end
 
   def project_categories
-    ["Anne_Frank_Workshop", "Avatar_Mural", "Bubbles", "Caravan_Cabin", "Didjeridoo_Workshop", "Horse_Box", "Magic_Bus", "New_York_Skyline", "Truck_Mural", "WC_Shed"]
+    ["Magic_Bus", "New_York_Skyline", "Bubbles", "Caravan_Cabin", "Avatar_Mural", "Horse_Box", "Didjeridoo_Workshop", "WC_Shed", "Anne_Frank_Workshop", "Truck_Mural"]
   end
 
   def set_javascript_variables
