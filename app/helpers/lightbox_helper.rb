@@ -13,7 +13,7 @@ module LightboxHelper
   end
 
   def folder(category)
-    "#{Rails.root}/app/assets/images/#{action_name}/#{category}/"
+    "#{Rails.root}/app/assets/images/#{action_name.capitalize}/#{category}/"
   end
 
   def image_count(category)
