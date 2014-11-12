@@ -3,9 +3,43 @@
 }
 
 div.title-spacing {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 p.email {
   color: #4b4848;
+  padding-top: 50px;
+}
+
+p i {
+  font-size:17px;
+}
+
+div.sub-title-spacing {
+  padding-top:20px;
+}
+
+.hidden-image {
+  padding:30px;
+}
+
+a.download-button img{
+  padding-top: 15px;
+}
+
+.download-button-wrapper {
+  margin-left:330px;
+  margin-top:25px;
+}
+
+.download-button {
+   display:block;
+   background-image: url('/assets/download_button1.png');
+   background-repeat: no-repeat;
+   width: 180px;
+   height: 40px;
+}
+
+.download-button:hover {
+   background-image: url('/assets/download_button2.png');
 }

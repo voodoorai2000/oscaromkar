@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'pages#artwork'
   get  'projects' => 'pages#projects', as: :projects
   get  'about'    => 'pages#about',    as: :about
+  get  'hidden'   => 'pages#hidden',   as: :hidden
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

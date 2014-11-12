@@ -12,6 +12,9 @@ class PagesController < ApplicationController
   def about
   end
 
+  def hidden
+  end
+
   private
 
   def artwork_categories
