@@ -3,10 +3,12 @@ class PagesController < ApplicationController
 
   def artwork
     @categories = artwork_categories
+    fresh_when(@categories, public: true)
   end
 
   def projects
     @categories = project_categories
+    fresh_when(@categories, public: true)
   end
 
   def about
