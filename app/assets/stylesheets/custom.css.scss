@@ -34,12 +34,12 @@ a.download-button img{
 
 .download-button {
    display:block;
-   background-image: url('/assets/download_button1.png');
+   background-image: image-url('download_button1.png');
    background-repeat: no-repeat;
    width: 180px;
    height: 40px;
 }
 
 .download-button:hover {
-   background-image: url('/assets/download_button2.png');
+   background-image: image-url('download_button2.png');
 }
