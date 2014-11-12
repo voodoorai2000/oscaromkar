@@ -5,11 +5,11 @@ module LightboxHelper
   end
 
   def category_image(category)
-    "/assets/#{action_name}/CategoryImages/#{category.upcase}.jpg"
+    asset_path "#{action_name}/CategoryImages/#{category.upcase}.jpg"
   end
 
   def image_name(category, index)
-    "/assets/#{action_name}/#{category}/#{index}.jpg"
+    asset_path "#{action_name}/#{category}/#{index}.jpg"
   end
 
   def folder(category)
