@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require analytics
 //= require jquery.turbolinks
 //= require jquery.colorbox
-//= require_tree .
+//= require lightbox
