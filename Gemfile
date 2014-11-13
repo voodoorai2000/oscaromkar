@@ -37,6 +37,7 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
   gem 'dalli'
+  gem 'newrelic_rpm'
 end
 
 # Use ActiveModel has_secure_password
