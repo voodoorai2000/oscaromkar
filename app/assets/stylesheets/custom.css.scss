@@ -2,6 +2,10 @@
   display: none;
 }
 
+.centered {
+   text-align:center;
+}
+
 div.title-spacing {
   margin-top: 90px;
 }
@@ -25,21 +29,4 @@ div.sub-title-spacing {
 
 a.download-button img{
   padding-top: 15px;
-}
-
-.download-button-wrapper {
-  margin-left:330px;
-  margin-top:25px;
-}
-
-.download-button {
-   display:block;
-   background-image: image-url('download_button1.png');
-   background-repeat: no-repeat;
-   width: 180px;
-   height: 40px;
-}
-
-.download-button:hover {
-   background-image: image-url('download_button2.png');
 }

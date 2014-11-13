@@ -1,5 +1,5 @@
 <section class="wrapper">
-  <div class="content" style="text-align:center">
+  <div class="content centered">
     
     <h1>Congratulations!</h1>
 
@@ -15,9 +15,8 @@
     </p>
     
     <div>
-      <p class="download-button-wrapper">
-        <%= link_to('', asset_path('Oscar_Omkars_Hidden_Treasure.pdf'), class: 'download-button') %>
-      </p>
+      <%= link_to image_tag('download_button.png'), 
+                  asset_path('Oscar_Omkars_Hidden_Treasure.pdf'), class: 'download-button' %>
     </div>
 
   </div>
