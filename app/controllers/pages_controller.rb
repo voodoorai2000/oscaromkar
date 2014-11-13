@@ -3,11 +3,13 @@ class PagesController < ApplicationController
 
   def artwork
     @categories = artwork_categories
+    expires_in 2.years
     fresh_when(@categories, public: true)
   end
 
   def projects
     @categories = project_categories
+    expires_in 2.years
     fresh_when(@categories, public: true)
   end
 
