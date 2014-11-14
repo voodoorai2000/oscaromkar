@@ -81,7 +81,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.cache_store = :dalli_store
-  config.cache_store = :dalli_store
 
   # Configure Rack::Cache (rack middleware, whole page / static assets) (we set
   # value_max_bytes to 10MB, most memcache servers won't allow values larger
@@ -89,12 +88,6 @@ Rails.application.configure do
   # option, Rack::Cache just returns a miss).
   client = Dalli::Client.new(ENV["MEMCACHIER_SERVERS"],
                              :value_max_bytes => 10485760)
-  config.action_dispatch.rack_cache = {
-    :metastore    => client,
-    :entitystore  => client
-  }
-  config.static_cache_control = "public, max-age=2592000"
-
   config.action_dispatch.rack_cache = {
     :metastore    => client,
     :entitystore  => client
