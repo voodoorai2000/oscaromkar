@@ -66,6 +66,7 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.1)
+    kgio (2.9.2)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -156,6 +157,7 @@ DEPENDENCIES
   jquery-colorbox-rails
   jquery-rails
   jquery-turbolinks
+  kgio
   memcachier
   newrelic_rpm
   pg

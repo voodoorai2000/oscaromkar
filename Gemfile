@@ -38,6 +38,7 @@ group :production do
   gem 'rails_12factor'
   gem 'dalli'
   gem 'memcachier'
+  gem 'kgio'
   gem 'thin'
   gem 'newrelic_rpm'
 end
