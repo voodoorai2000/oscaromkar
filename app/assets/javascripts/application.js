@@ -15,3 +15,4 @@
 //= require jquery.turbolinks
 //= require jquery.colorbox
 //= require lightbox
+//= require mobile

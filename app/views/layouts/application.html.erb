@@ -9,17 +9,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <section class="main clearfix">
-    <%= yield %>
-  </section>
   
   <header>
     <div class="logo">
       <%= link_to(image_tag("logo1.jpg", title: "Oscar Omkar", alt: "Oscar Omkar"), hidden_path) %>
     </div>
 
-    <div id=""></div>
+    <div id="menu_icon"></div>
     
     <nav>
       <ul>
@@ -37,6 +33,10 @@
     </div >
   </header>
 
+  <section class="main clearfix">
+    <%= yield %>
+  </section>
+  
   <%= render 'layouts/analytics' %>
 </body>
 </html>
