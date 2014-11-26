@@ -3,14 +3,12 @@ class PagesController < ApplicationController
 
   def artwork
     @categories = artwork_categories
-    expires_in 2.years
-    fresh_when(@categories, public: true)
+    render_cached
   end
 
   def projects
     @categories = project_categories
-    expires_in 2.years
-    fresh_when(@categories, public: true)
+    render_cached
   end
 
   def about
@@ -31,6 +29,15 @@ class PagesController < ApplicationController
 
   def set_javascript_variables
     gon.categories = artwork_categories + project_categories
+  end
+
+  def render_cached
+    expires_in 2.years
+    fresh_when(last_updated, public: true)
+  end
+
+  def last_updated
+    "25 nov 2014".to_time
   end
 
 end
