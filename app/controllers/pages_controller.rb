@@ -33,7 +33,7 @@ class PagesController < ApplicationController
 
   def render_cached
     expires_in 2.years
-    fresh_when(last_updated, public: true)
+    fresh_when([@categories, last_updated], public: true)
   end
 
   def last_updated
