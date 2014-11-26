@@ -37,7 +37,7 @@ class PagesController < ApplicationController
   end
 
   def last_updated
-    "25 nov 2014".to_time
+    "2014-11-26 02:14:35 +0100".to_time
   end
 
 end
